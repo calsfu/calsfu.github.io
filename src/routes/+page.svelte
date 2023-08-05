@@ -1,14 +1,42 @@
 <body>
     <div class="main">
-        <div class="header">
-            <a>Cole Resurreccion</a>
-            <nav>
+        <nav class="header">
+            <ul class="headerItems">
+                <li class="topLeft">
+                    <ul class="guide">
+                        <li>
+                            <a href="">Cole Resurreccion</a>
+                            
+                                <a href="https://github.com/calsfu"><img src="/src/lib/images/github-mark-white.png" alt="logo" class="logo"></a>
+                            
+                        </li>
+                    </ul>
+                </li>
+                <li class="topRight">
+                    <ul class="guide">
+                        <li class="guideItem">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="guideItem">
+                            <a href="">About</a>
+                        </li>
+                        <li class="guideItem"> 
+                            <a href="">Skills</a>
+                        </li>
+                        <li class="guideItem">
+                            <a href="">Projects</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- <<li>>
                 <a href="">Home</a>
                 <a href="">About</a>
                 <a href="">Skills</a>
                 <a href="">Projects</a>
-            </nav>
-        </div>  
+            </nav> -->
+        </nav>  
         <div class="home">
             <h1>Hello</h1>
             <h4>Boston University Computer Engineering 25'</h4>
@@ -220,24 +248,61 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* background-color: rgb(39, 39, 39); */
-        padding: 10px;
+        background-color: rgb(39, 39, 39); 
         position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;;
         z-index: 9999;
     }
-    .header nav {
+    .headerItems {
         display: flex;
-        float: right;
-        color:white;
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        list-style-type: none;
+        margin: auto;
     }
-    .header nav a {
-        margin-left: 20px; /* Add spacing between navigation links */
+    .guide {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        gap: 15px;
+    }
+    .logo {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        height: 20px;
+        padding-left: 4px;
+    }
+    .guideItem {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .topLeft {
+        display: flex;
+        flex-direction: row;
+        -moz-box-align: left;
+        align-items: center;
+        height: 100%;
+    }
+    .topRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
     }
     .home {
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
-        text-align: center;
+        text-align: center; 
     }
     .home p {
         font-size: 1rem;
@@ -286,5 +351,12 @@
         font-size: 1rem;
         position: relative;
         text-align: center;
+    }
+    .projects {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        text-align: center;  
+        justify-content: center;
+        color : white;
     }
 </style>
