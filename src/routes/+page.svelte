@@ -208,13 +208,42 @@
                 <li>Deep Learning</li>
                 <li>Computer Vision</li> -->
         </div>
+        <section class="projects">
+            <h1 class="projectTitle">PROJECTS</h1>
+            <div class="projectBox">
+                <div class="textBox">
+                    <h2>Model Processor</h2>
+                    <h3>Digital Logic</h3>
+                    <p>Lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="imgBox">
+                    <img src="/src/lib/images/ModelProcessor.png" alt="Model Processor" class="projectImg">
+                </div>
+            </div>
+            <div class="projectBox">
+                <div class="imgBox">
+                    <img src="/src/lib/images/ModelProcessor.png" alt="Model Processor" class="projectImg">
+                </div>
+                <div class="textBox">
+                    <h2>Model Processor</h2>
+                    <h3>Digital Logic</h3>
+                    <p>Lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+            </div>
+            <div class="projectBox">
+                <div class="textBox">
+                    <h2>Model Processor</h2>
+                    <h3>Digital Logic</h3>
+                    <p>Lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="imgBox">
+                    <img src="/src/lib/images/ModelProcessor.png" alt="Model Processor" class="projectImg">
+                </div>
+            </div>
+            
+        </section>
     </div>
-    <div class="projects">
-        <h1>PROJECTS</h1>
-        <div class="">
-
-        </div>
-    </div>
+    
 </body>
 
 <style>
@@ -270,6 +299,7 @@
         align-items: center;
         list-style-type: none;
         gap: 15px;
+        padding-left: 0;
     }
     .logo {
         position: relative;
@@ -288,7 +318,6 @@
     .topLeft {
         display: flex;
         flex-direction: row;
-        -moz-box-align: left;
         align-items: center;
         height: 100%;
     }
@@ -325,10 +354,10 @@
         display: grid;
         /* flex-wrap: wrap; */
         /* justify-content: center; */
-        align-items: center;
         grid-template-columns: repeat(3, 16rem);
         gap: 20px;
         justify-content: center;
+        padding-left: 0px;
     }
     .wholeIcon {
         display: grid;
@@ -345,7 +374,8 @@
         align-items: center;
         position: relative;
         display: flex;
-        margin-left: 10px;
+        padding: 7px;
+        background-color: gray;
     }
     .skillText {
         font-size: 1rem;
@@ -355,8 +385,48 @@
     .projects {
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
-        text-align: center;  
-        justify-content: center;
         color : white;
+        margin:5%;
     }
+    .projectTitle {
+        text-align: center;
+    }
+    .projectBox {
+        display: grid;
+        margin: 0%;
+        width: 95%;
+        grid-template-columns: 50% 50%;
+        gap: 50px;
+        margin-bottom: 5%;
+    }
+    .textBox {
+        background-color: rgb(39, 39, 39);
+        height: 100%;
+       
+        text-align: center;
+        position: relative;
+    }
+    .imgBox {
+        /* width: 40%;
+        height: auto;
+        position: absolute;
+        left:auto;
+        overflow: hidden; */
+
+        float:right;
+        left: auto;
+        right: 0px;
+        margin-top: 7%;
+        height: auto;
+        padding-top: 0px;
+        overflow: hidden;
+    }
+    .projectImg {
+        width: 100%;
+        height: auto;
+        display: block;
+        right: 0px;
+    }
+
+
 </style>
