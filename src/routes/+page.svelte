@@ -25,6 +25,9 @@
         });
     }
 </script>
+<header>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+</header>
     <svelte:window bind:scrollY={y} />
 <body>
     <div class="main">
@@ -33,10 +36,8 @@
                 <li class="topLeft">
                     <ul class="guide">
                         <li>
-                            <a href="">Cole Resurreccion</a>
-                            
-                                <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/src/lib/images/github-mark-white.png" alt="logo" class="logo"></a>
-                            
+                            <button on:click={scrollToHome} id="mainBut">Cole Resurreccion</button>
+                            <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/src/lib/images/github-mark-white.png" alt="logo" class="logo"></a>
                         </li>
                     </ul>
                 </li>
@@ -59,7 +60,7 @@
             </ul>
         </nav>  
         <section id="home" class="home">
-            <h1>Hello, I'm Cole Resurreccion</h1>
+            <h1>Hello, I'm <span class="color_name">Cole Resurreccion</span></h1>
             <h4>Boston University Computer Engineering 25'</h4>
         </section>
         <section id="about" class="about">
@@ -74,7 +75,7 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                            <i class="devicon-cplusplus-plain-wordmark"></i>
                         </div>
                         <p class="skillText">C++</p>
                     </li>
@@ -83,7 +84,7 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                            <img id="toobig" src="/src/lib/images/verilog-svgrepo-com.svg">
                         </div>
                         <p class="skillText">Verilog</p>
                     </li>
@@ -91,7 +92,7 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                            <i class="devicon-matlab-plain"></i>
                         </div>
                         <p class="skillText">MATLAB</p>
                     </li>
@@ -99,7 +100,7 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                            <i class="devicon-typescript-plain"></i>
                         </div>
                         <p class="skillText">Typescript</p>
                     </li>
@@ -107,7 +108,7 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                            <i class="devicon-html5-plain"></i>
                         </div>
                         <p class="skillText">HTML</p>
                     </li>
@@ -123,7 +124,7 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                            <i class="devicon-arduino-plain"></i>
                         </div>
                         <p class="skillText">Arduino</p>
                     </li>
@@ -131,7 +132,7 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                            <i class="devicon-rust-plain"></i>
                         </div>
                         <p class="skillText">Rust</p>
                     </li>
@@ -139,7 +140,7 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                            <i class="devicon-svelte-plain"></i>
                         </div>
                         <p class="skillText">Svelte</p>
                     </li>
@@ -150,7 +151,7 @@
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                                <i class="devicon-python-plain"></i>
                             </div>
                             <p class="skillText">Python</p>
                         </li>
@@ -159,7 +160,7 @@
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                                <i class="devicon-thealgorithms-plain"></i>
                             </div>
                             <p class="skillText">Algorithms</p>
                         </li>
@@ -284,7 +285,14 @@
                     <img src="/src/lib/images/ModelProcessor.png" alt="Model Processor" class="projectImg">
                 </div>
             </div>
-            
+            <p>Find more <a href="https://github.com/calsfu?tab=repositories">here</a></p>
+        </section>
+        <section class="footer">
+            <div class="footerInfo"> 
+                <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/src/lib/images/github-mark-white.png" alt="logo" class="logo"></a>
+                <p>© 2023 Cole Resurreccion</p>
+                <a href="mailto::business@gmail.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
+            </div>
         </section>
     </div>
     
@@ -303,10 +311,16 @@
 
         /* display: inline-block; */
     }
-    a {
+    .header a {
         cursor: pointer;
         text-decoration: none;
         color: white;
+    }
+    .projectBox a {
+        cursor: pointer;
+        text-decoration: underline;
+        color: white;
+        text-align: center;
     }
     .main { 
         height: 100%;
@@ -334,7 +348,6 @@
         align-items: center;
         list-style-type: none;
         margin: auto;
-        
     }
     .guide {
         display: flex;
@@ -350,6 +363,18 @@
         width: auto;
         height: 20px;
         padding-left: 4px;
+    }
+    .color_name {
+        color: rgb(77, 139, 255);
+    }
+    #mainBut {
+        background-color: rgb(0, 0, 39);
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
     }
     .guideItem {
         font-size: 1.4rem;
@@ -447,6 +472,10 @@
         padding: 7px;
         background-color: rgb(70, 70, 70);
     }
+    #toobig {
+        width: 32px;
+        height: auto;
+    }
     .skillText {
         font-size: 1rem;
         position: relative;
@@ -472,14 +501,13 @@
     .textBox {
         background-color: rgb(0, 0, 39);
         height: 70%;
-        margin-top: 4%;
+        margin-top: 2%;
         padding: 4%;
         position: relative;
     }
     .textBox h2 {
         font-size: 2rem;
         margin: 0px;
-        margin-top: 4%;
     }
     .textBox h4 {
         font-size: 1.2rem;
@@ -493,6 +521,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        margin-bottom: 4%;
     }
     #verilog-symbol {
         width: 7%;
@@ -526,6 +555,23 @@
         display: block;
         right: 0px;
     }
+    .footer {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(0, 0, 39);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: .6rem;
 
+    }
+    .footerInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        padding-top: .7%;
+    }
 
 </style>
