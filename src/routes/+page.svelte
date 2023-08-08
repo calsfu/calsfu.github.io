@@ -50,8 +50,8 @@
                     <ul class="guide">
                         <li style="display:flex; flex-direction:row; align-items: center; justify-content:center;    ">
                             <button on:click={scrollToHome} id="mainBut" style="font-weight: 500;">Cole Resurreccion</button>
-                            <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/src/lib/images/github-mark-white.png" alt="logo" class="logo"></a>
-                            <button on:click={toggleLightMode} tabindex="0" style="background-color:transparent; border:0px; cursor:pointer"><img style=" width:25px; height:auto; margin-top:7px;"src="/src/lib/images/moon-svgrepo-com.svg" alt="nightmode"></button>
+                            <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/github-mark-white.png" alt="logo" class="logo"></a>
+                            <button on:click={toggleLightMode} tabindex="0" style="background-color:transparent; border:0px; cursor:pointer"><img style=" width:25px; height:auto; margin-top:7px;"src="/moon-svgrepo-com.svg" alt="nightmode"></button>
                         </li>
                     </ul>
                 </li>
@@ -97,7 +97,7 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <img id="toobig" alt="poopy" src="/src/lib/images/verilog-svgrepo-com.svg">
+                            <img id="toobig" alt="poopy" src="/verilog-svgrepo-com.svg">
                         </div>
                         <p class="skillText">Verilog</p>
                     </li>
@@ -181,7 +181,7 @@
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
-                                <img src="/src/lib/images/data-structure.svg" alt="datas" id="toobig">
+                                <img src="/data-structure.svg" alt="datas" id="toobig">
                             </div>
                             <p class="skillText">Data Structures</p>
                         </li>
@@ -189,7 +189,7 @@
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
-                                <img src="/src/lib/images/operating-systems.svg" alt="datas" id="toobig">
+                                <img src="/operating-systems.svg" alt="datas" id="toobig">
                             </div>
                             <p class="skillText">OS</p>
                         </li>
@@ -197,7 +197,7 @@
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
-                                <img src="/src/lib/images/computer-arch.svg" alt="datas" id="toobig">
+                                <img src="/computer-arch.svg" alt="datas" id="toobig">
                             </div>
                             <p class="skillText">Computer Architecture</p>
                         </li>
@@ -205,7 +205,7 @@
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
-                                <img src="/src/lib/images/statistics.svg" alt="datas" id="toobig">
+                                <img src="/statistics.svg" alt="datas" id="toobig">
                             </div>
                             <p class="skillText">Statistics</p>
                         </li>
@@ -213,7 +213,7 @@
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
-                                <img src="/src/lib/images/machine-learning.svg" alt="datas" id="toobig">
+                                <img src="/machine-learning.svg" alt="datas" id="toobig">
                             </div>
                             <p class="skillText">Machine Learning</p>
                         </li>
@@ -221,7 +221,7 @@
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
-                                <img src="/src/lib/images/deep-learning-project-svgrepo-com.svg" alt="datas" id="toobig">
+                                <img src="/deep-learning-project-svgrepo-com.svg" alt="datas" id="toobig">
                             </div>
                             <p class="skillText">Deep Learning</p>
                         </li>
@@ -229,7 +229,7 @@
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
-                                <img src="/src/lib/images/eye.svg" alt="datas" id="toobig">
+                                <img src="/eye.svg" alt="datas" id="toobig">
                             </div>
                             <p class="skillText">Computer Vision</p>
                         </li>
@@ -255,19 +255,19 @@
                     <h4 >Digital Logic</h4>
                     <p>Created a model CPU with 8 registers and a 16-bit bus. Supports 8 functions lie, ADD, SUB, MULT, JUMP. Recieved information from ROM storage and a program conter. Supports FPGA.</p>
                     <div class="projectInfo">
-                        <img src="/src/lib/images/verilog-svgrepo-com.svg" alt="verilog-symbol" id="verilog-symbol">
+                        <img src="/verilog-svgrepo-com.svg" alt="verilog-symbol" id="verilog-symbol">
                         <a href="https://github.com/calsfu/verilog_processor" target="_blank" rel="noopener noreferrer" id="seemorebutton">
                             See More
                         </a>
                     </div>
                 </div>
                 <div class="imgBox">
-                    <img src="/src/lib/images/ModelProcessor.png" alt="Model Processor" class="projectImg">
+                    <img src="/ModelProcessor.png" alt="Model Processor" class="projectImg">
                 </div>
             </div>
             <div class="projectBox">
                 <div class="imgBox">
-                    <img src="/src/lib/images/BikeLightPhoto.png" alt="Bike Light" class="projectImg">
+                    <img src="/BikeLightPhoto.png" alt="Bike Light" class="projectImg">
                 </div>
                 <div class="textBox">
                     <h2>Bike Light</h2>
@@ -275,7 +275,7 @@
                     <p>A bike light that turns off in bright settings and gets brighter as speed increases. Collaborated in a group to create a circuit diagram, reasearch and purchas parts
                         , and wrote code for an Arduino microcontroller.  </p>
                     <div class="projectInfo">
-                        <img src="/src/lib/images/arduino-svgrepo-com.svg" alt="arduino-symbol" id="arduino-symbol">
+                        <img src="/arduino-svgrepo-com.svg" alt="arduino-symbol" id="arduino-symbol">
                         <a href="https://github.com/calsfu/verilog_processor" target="_blank" rel="noopener noreferrer" id="seemorebutton">
                             See More
                         </a>
@@ -295,14 +295,14 @@
                     </div>
                 </div>
                 <div class="imgBox">
-                    <img src="/src/lib/images/pokemon.png" alt="Model Processor" class="projectImg">
+                    <img src="/pokemon.png" alt="Model Processor" class="projectImg">
                 </div>
             </div>
             <p style="color: var(--text-color);">Find more <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer">here</a></p>
         </section>
         <section class="footer">
             <div class="footerInfo"> 
-                <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/src/lib/images/github-mark-white.png" alt="logo" class="logo"></a>
+                <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/github-mark-white.png" alt="logo" class="logo"></a>
                 <p>Made by Cole Resurreccion</p>
                 <a href="mailto::coler2366@gmail.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
             </div>
