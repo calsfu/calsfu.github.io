@@ -1,6 +1,6 @@
 <script>
     let y = 50;
-    let darkMode = true;
+    let darkMode = false;
     function scrollToHome() {
         window.scrollTo({
             top: 0,
@@ -49,7 +49,7 @@
                 <li class="topLeft">
                     <ul class="guide">
                         <li style="display:flex; flex-direction:row; align-items: center; justify-content:center;    ">
-                            <button on:click={scrollToHome} id="mainBut">Cole Resurreccion</button>
+                            <button on:click={scrollToHome} id="mainBut" style="font-weight: 500;">Cole Resurreccion</button>
                             <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/src/lib/images/github-mark-white.png" alt="logo" class="logo"></a>
                             <button on:click={toggleLightMode} tabindex="0" style="background-color:transparent; border:0px; cursor:pointer"><img style=" width:25px; height:auto; margin-top:7px;"src="/src/lib/images/moon-svgrepo-com.svg" alt="nightmode"></button>
                         </li>
@@ -74,12 +74,11 @@
             </ul>
         </nav>  
         <section id="home" class="home">
-            <h1>Hello, I'm <span class="color_name">Cole Resurreccion</span></h1>
-            <h4>Boston University Computer Engineering 25'</h4>
+            <h1 style="font-weight: 400; font-family: 'Poppins', sans-serif;">Hello, I'm <span class="color_name">Cole Resurreccion</span></h1>
+            <h4 style="font-weight: 400;">Boston University Computer Engineering 25'</h4>
         </section>
         <section id="about" class="about">
-            <p>I am a third year computer engineering at Boston University. Currently, I am on a software track and am learning C++, MATLAB, and Verilog in school, but am self-teaching myself
-                other front end languages. 
+            <p>I am a third year computer engineering at Boston University. Currently, I am on a software track that focuses on backend development and computer architecture, but I am self-teaching myself front end languages. 
             </p>
         </section>
         <section class = "skills">
@@ -299,13 +298,13 @@
                     <img src="/src/lib/images/pokemon.png" alt="Model Processor" class="projectImg">
                 </div>
             </div>
-            <p style="color: var(--text-color);">Find more <a href="https://github.com/calsfu?tab=repositories">here</a></p>
+            <p style="color: var(--text-color);">Find more <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer">here</a></p>
         </section>
         <section class="footer">
             <div class="footerInfo"> 
                 <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/src/lib/images/github-mark-white.png" alt="logo" class="logo"></a>
                 <p>Made by Cole Resurreccion</p>
-                <a href="mailto::business@gmail.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
+                <a href="mailto::coler2366@gmail.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
             </div>
         </section>
     </div>
@@ -313,8 +312,19 @@
 </body>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
     :root {
+       
+        --background-color: white; 
+        --header-color: rgb(111, 0, 255);
+        --colored-text: rgb(111, 0, 255);
+        --project-colored-text: white;
+        --text-color: black;
+        --white: white;
+        --skill-text: rgb(111, 0, 255);
+        --skill-icon: rgb(71, 0, 163);
+    }
+    :root[data-theme='dark'] {
         --background-color: rgb(17, 17, 17); 
         --header-color: rgb(0, 0, 39)   ;
         --colored-text: rgb(77, 139, 255);
@@ -324,16 +334,6 @@
         --skill-text: rgb(39, 39, 39);
         --skill-icon: rgb(70, 70, 70);
         
-    }
-    :root[data-theme='light'] {
-        --background-color: white; 
-        --header-color: rgb(111, 0, 255);
-        --colored-text: rgb(111, 0, 255);
-        --project-colored-text: white;
-        --text-color: black;
-        --white: white;
-        --skill-text: rgb(111, 0, 255);
-        --skill-icon: rgb(71, 0, 163);
   }
     body {
         background-color: var(--background-color);
@@ -453,6 +453,7 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        font-weight: 300;
     }
     .about {
         display: flex;
@@ -496,7 +497,6 @@
         grid-template-columns: max-content 1fr;
         grid-template-rows: 1fr;
         background-color: var(--skill-text);
-        
         /* display: flex;
         flex-direction: column;
         align-items: center;
@@ -542,6 +542,7 @@
     }
     .textBox {
         background-color: var(--header-color);
+        border-radius: 4%;
         height: fit-content;
         margin-top: 2%;
         padding: 4%;
