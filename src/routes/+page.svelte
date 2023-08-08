@@ -83,7 +83,7 @@
         </section>
         <section class = "skills">
             <h1>SKILLS</h1>
-            <p>Proficient</p>
+            <p>Use</p>
             <ul class="skillList">
                 <div class="poopy">
                     <li class="wholeIcon">
