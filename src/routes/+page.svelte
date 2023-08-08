@@ -262,7 +262,7 @@
                     </div>
                 </div>
                 <div class="imgBox">
-                    <img src="/ModelProcessor.png" alt="Model Processor" class="projectImg">
+                    <img src="/modelProcessor.png" alt="Model Processor" class="projectImg">
                 </div>
             </div>
             <div class="projectBox">
