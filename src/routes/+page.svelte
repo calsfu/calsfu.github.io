@@ -9,19 +9,19 @@
     }
     function scrollToAbout() {
         window.scrollTo({
-            top: 1300,
+            top: 1200,
             behavior: 'smooth'
         });
     }
     function scrollToSkills() {
         window.scrollTo({
-            top: 2500,
+            top: 2200,
             behavior: 'smooth'
         });
     }
     function scrollToProjects() {
         window.scrollTo({
-            top: 3350,
+            top: 3700,
             behavior: 'smooth'
         });
     }
@@ -121,17 +121,17 @@
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <i class="devicon-html5-plain"></i>
+                            <i class="devicon-thealgorithms-plain"></i>
                         </div>
-                        <p class="skillText">HTML</p>
+                        <p class="skillText">Algorithms</p>
                     </li>
                 </div>
                 <div class="poopy">
                     <li class="wholeIcon">
                         <div class="picture">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
+                            <img src="/data-structure.svg" alt="datas" id="toobig">
                         </div>
-                        <p class="skillText">CSS</p>
+                        <p class="skillText">Data Structures</p>
                     </li>
                 </div>
                 <div class="poopy">
@@ -170,22 +170,7 @@
                         </li>
                     </div>
                     <!-- Repeat this for Verilog, MATLAB, Typescript, HTML, CSS, Svelte, Git, Rust -->
-                    <div class="poopy">
-                        <li class="wholeIcon">
-                            <div class="picture">
-                                <i class="devicon-thealgorithms-plain"></i>
-                            </div>
-                            <p class="skillText">Algorithms</p>
-                        </li>
-                    </div>
-                    <div class="poopy">
-                        <li class="wholeIcon">
-                            <div class="picture">
-                                <img src="/data-structure.svg" alt="datas" id="toobig">
-                            </div>
-                            <p class="skillText">Data Structures</p>
-                        </li>
-                    </div>
+                    
                     <div class="poopy">
                         <li class="wholeIcon">
                             <div class="picture">
