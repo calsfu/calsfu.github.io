@@ -9,28 +9,28 @@
     }
     function scrollToAbout() {
         window.scrollTo({
-            top: 730,
+            top: 1300,
             behavior: 'smooth'
         });
     }
     function scrollToSkills() {
         window.scrollTo({
-            top: 1650,
+            top: 2500,
             behavior: 'smooth'
         });
     }
     function scrollToProjects() {
         window.scrollTo({
-            top: 2450,
+            top: 3350,
             behavior: 'smooth'
         });
     }
     function toggleLightMode() {
         darkMode = !darkMode;
         if(darkMode) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        } else {
             document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
         }
     }
 </script>
@@ -250,7 +250,7 @@
         <section class="projects">
             <h1 class="projectTitle">PROJECTS</h1>
             <div class="projectBox">
-                <div class="textBox">
+                <!-- <div class="textBox">
                     <h2>Model Processor</h2>
                     <h4 >Digital Logic</h4>
                     <p>Created a model CPU with 8 registers and a 16-bit bus. Supports 8 functions lie, ADD, SUB, MULT, JUMP. Recieved information from ROM storage and a program conter. Supports FPGA.</p>
@@ -263,6 +263,20 @@
                 </div>
                 <div class="imgBox">
                     <img src="/modelProcessor.png" alt="Model Processor" class="projectImg">
+                </div> -->
+                <div class="textBox">
+                    <h2>Scheduling Discord Bot</h2>
+                    <h4 >Typescript</h4>
+                    <p>Engineered a custom Discord bot for scheduling events and activities using the discord.js API. Utilized a SQLite database to store server specific events and send reminders an hour before an even</p>
+                    <div class="projectInfo">
+                        <i class="devicon-typescript-plain"></i>
+                        <a href="https://github.com/calsfu/scheduling-bot" target="_blank" rel="noopener noreferrer" id="seemorebutton">
+                            See More
+                        </a>
+                    </div>
+                </div>
+                <div class="imgBox">
+                    <img src="/scheduling-2.png" alt="scheduling-bot" class="projectImg">
                 </div>
             </div>
             <div class="projectBox">
@@ -283,7 +297,7 @@
                 </div>
             </div>
             <div class="projectBox">
-                <div class="textBox">
+                <!-- <div class="textBox">
                     <h2>ASCII Pokemon Game</h2>
                     <h4 >C++ Terminal Game</h4>
                     <p>Pokemon game using C++ in the terminal. Uses classes, inheritance, polymorphism, and more. </p>
@@ -296,8 +310,41 @@
                 </div>
                 <div class="imgBox">
                     <img src="/pokemon.png" alt="Model Processor" class="projectImg">
+                </div> -->
+                <div class="textBox">
+                    <h2>Reinforcment Learning Driving Game</h2>
+                    <h4 >PyTorch Neural Network</h4>
+                    <p>Created a Deep Q Learning (DQN) Neural Network with PyTorch to finish a race. Optimized network to receive maximum reward from the OpenAI Gymnasium API. </p>
+                    <div class="projectInfo">
+                        <i class="devicon-python-plain"></i>
+                        <a href="https://github.com/calsfu/ASCII-Pokemon-Game" target="_blank" rel="noopener noreferrer" id="seemorebutton">
+                            See More
+                        </a>
+                    </div>
+                </div>
+                <div class="imgBox">
+                    <img src="/Steps_2000.gif" alt="reinfocement-learning-gif" class="projectImg">
                 </div>
             </div>
+            <div class="projectBox">
+                <!-- <div class="imgBox">
+                    <img src="/BikeLightPhoto.png" alt="Bike Light" class="projectImg">
+                </div>
+                <div class="textBox">
+                    <h2>Bike Light</h2>
+                    <h4 >Microcontroller Intergration</h4>
+                    <p>A bike light that turns off in bright settings and gets brighter as speed increases. Collaborated in a group to create a circuit diagram, reasearch and purchase parts
+                        , and wrote code for an Arduino microcontroller.  </p>
+                    <div class="projectInfo">
+                        <img src="/arduino-svgrepo-com.svg" alt="arduino-symbol" id="arduino-symbol">
+                        <a href="https://github.com/calsfu/verilog_processor" target="_blank" rel="noopener noreferrer" id="seemorebutton">
+                            See More
+                        </a>
+                    </div>
+                </div> -->
+                
+            </div>
+            
             <p style="color: var(--text-color);">Find more <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer">here</a></p>
         </section>
         <section class="footer">
@@ -314,17 +361,6 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
     :root {
-       
-        --background-color: white; 
-        --header-color: rgb(111, 0, 255);
-        --colored-text: rgb(111, 0, 255);
-        --project-colored-text: white;
-        --text-color: black;
-        --white: white;
-        --skill-text: rgb(111, 0, 255);
-        --skill-icon: rgb(71, 0, 163);
-    }
-    :root[data-theme='dark'] {
         --background-color: rgb(17, 17, 17); 
         --header-color: rgb(0, 0, 39)   ;
         --colored-text: rgb(77, 139, 255);
@@ -333,6 +369,19 @@
         --white: white;
         --skill-text: rgb(39, 39, 39);
         --skill-icon: rgb(70, 70, 70);
+
+
+        
+    }
+    :root[data-theme='light'] {
+        --background-color: white; 
+        --header-color: rgb(111, 0, 255);
+        --colored-text: rgb(111, 0, 255);
+        --project-colored-text: white;
+        --text-color: black;
+        --white: white;
+        --skill-text: rgb(111, 0, 255);
+        --skill-icon: rgb(71, 0, 163);
         
   }
     body {
@@ -464,7 +513,7 @@
         font-size: 1.5rem;
         text-align: center;
         width: 90%;
-        height: 100vh;
+        height: 90vh;
         margin: auto;
     }
     .skills {
@@ -472,6 +521,7 @@
         font-size: 2rem;
         text-align: center;  
         justify-content: center;
+        height: 100vh;
         color: var(--text-color);
     }
     /* .skills ul {
@@ -601,7 +651,7 @@
         background-color: var(--header-color);
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
-        font-size: .6rem;
+        font-size: .85rem;
         color:var(--white);
 
     }
@@ -612,7 +662,7 @@
         align-items: center;
         width: 90%;
         margin: auto;
-        padding-top: .7%;
+        /* padding-top: .7%; */
     }
 
 </style>
