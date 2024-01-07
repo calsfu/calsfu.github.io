@@ -1,6 +1,11 @@
-<script>
+<script lang="ts">
+    import Projects from "./Projects.svelte";
+
     let y = 50;
     let darkMode = false;
+
+    let projectInput = 1;
+
     function scrollToHome() {
         window.scrollTo({
             top: 0,
@@ -33,6 +38,7 @@
             document.documentElement.setAttribute('data-theme', 'dark');
         }
     }
+
 </script>
 <header>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
@@ -234,99 +240,24 @@
                 </section>
         <section class="projects">
             <h1 class="projectTitle">PROJECTS</h1>
-            <div class="projectBox">
-                <!-- <div class="textBox">
-                    <h2>Model Processor</h2>
-                    <h4 >Digital Logic</h4>
-                    <p>Created a model CPU with 8 registers and a 16-bit bus. Supports 8 functions lie, ADD, SUB, MULT, JUMP. Recieved information from ROM storage and a program conter. Supports FPGA.</p>
-                    <div class="projectInfo">
-                        <img src="/verilog-svgrepo-com.svg" alt="verilog-symbol" id="verilog-symbol">
-                        <a href="https://github.com/calsfu/verilog_processor" target="_blank" rel="noopener noreferrer" id="seemorebutton">
-                            See More
-                        </a>
-                    </div>
-                </div>
-                <div class="imgBox">
-                    <img src="/modelProcessor.png" alt="Model Processor" class="projectImg">
-                </div> -->
-                <div class="textBox">
-                    <h2>Scheduling Discord Bot</h2>
-                    <h4 >Typescript</h4>
-                    <p>Engineered a custom Discord bot for scheduling events and activities using the discord.js API. Utilized a SQLite database to store server specific events and send reminders an hour before an even</p>
-                    <div class="projectInfo">
-                        <i class="devicon-typescript-plain"></i>
-                        <a href="https://github.com/calsfu/scheduling-bot" target="_blank" rel="noopener noreferrer" id="seemorebutton">
-                            See More
-                        </a>
-                    </div>
-                </div>
-                <div class="imgBox">
-                    <img src="/scheduling-2.png" alt="scheduling-bot" class="projectImg">
-                </div>
+            <!-- Choose type of projects -->
+            <div class="chooseProject">
+                <ul style="display:flex; flex-direction:row;  align-items: center;justify-content:center; list-style:none">
+                    <li><button class="button-64" on:click={() => projectInput = 1}><span class="text">Systems</span></button></li>
+                    <li><button class="button-64" on:click={() => projectInput = 2}><span class="text">OS</span></button></li>
+                    <li><button class="button-64" on:click={() => projectInput = 3}><span class="text">Machine Learning</span></button></li>
+                    <li><button class="button-64" on:click={() => projectInput = 4}><span class="text">Hardware/Embedded</span></button></li>
+                </ul>
+                
+                
+                
             </div>
+
+
             <div class="projectBox">
-                <div class="imgBox">
-                    <img src="/BikeLightPhoto.png" alt="Bike Light" class="projectImg">
-                </div>
-                <div class="textBox">
-                    <h2>Bike Light</h2>
-                    <h4 >Microcontroller Intergration</h4>
-                    <p>A bike light that turns off in bright settings and gets brighter as speed increases. Collaborated in a group to create a circuit diagram, reasearch and purchas parts
-                        , and wrote code for an Arduino microcontroller.  </p>
-                    <div class="projectInfo">
-                        <img src="/arduino-svgrepo-com.svg" alt="arduino-symbol" id="arduino-symbol">
-                        <a href="https://github.com/calsfu/verilog_processor" target="_blank" rel="noopener noreferrer" id="seemorebutton">
-                            See More
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projectBox">
-                <!-- <div class="textBox">
-                    <h2>ASCII Pokemon Game</h2>
-                    <h4 >C++ Terminal Game</h4>
-                    <p>Pokemon game using C++ in the terminal. Uses classes, inheritance, polymorphism, and more. </p>
-                    <div class="projectInfo">
-                        <i class="devicon-cplusplus-plain-wordmark"></i>
-                        <a href="https://github.com/calsfu/ASCII-Pokemon-Game" target="_blank" rel="noopener noreferrer" id="seemorebutton">
-                            See More
-                        </a>
-                    </div>
-                </div>
-                <div class="imgBox">
-                    <img src="/pokemon.png" alt="Model Processor" class="projectImg">
-                </div> -->
-                <div class="textBox">
-                    <h2>Reinforcment Learning Driving Game</h2>
-                    <h4 >PyTorch Neural Network</h4>
-                    <p>Created a Deep Q Learning (DQN) Neural Network with PyTorch to finish a race. Optimized network to receive maximum reward from the OpenAI Gymnasium API. </p>
-                    <div class="projectInfo">
-                        <i class="devicon-python-plain"></i>
-                        <a href="https://github.com/calsfu/ASCII-Pokemon-Game" target="_blank" rel="noopener noreferrer" id="seemorebutton">
-                            See More
-                        </a>
-                    </div>
-                </div>
-                <div class="imgBox">
-                    <img src="/Steps_2000.gif" alt="reinfocement-learning-gif" class="projectImg">
-                </div>
-            </div>
-            <div class="projectBox">
-                <!-- <div class="imgBox">
-                    <img src="/BikeLightPhoto.png" alt="Bike Light" class="projectImg">
-                </div>
-                <div class="textBox">
-                    <h2>Bike Light</h2>
-                    <h4 >Microcontroller Intergration</h4>
-                    <p>A bike light that turns off in bright settings and gets brighter as speed increases. Collaborated in a group to create a circuit diagram, reasearch and purchase parts
-                        , and wrote code for an Arduino microcontroller.  </p>
-                    <div class="projectInfo">
-                        <img src="/arduino-svgrepo-com.svg" alt="arduino-symbol" id="arduino-symbol">
-                        <a href="https://github.com/calsfu/verilog_processor" target="_blank" rel="noopener noreferrer" id="seemorebutton">
-                            See More
-                        </a>
-                    </div>
-                </div> -->
+                
+                <Projects groupNum = {projectInput}/>
+               
                 
             </div>
             
@@ -385,12 +316,7 @@
         text-decoration: none;
         color: var(--white);
     }
-    .projectBox a {
-        cursor: pointer;
-        text-decoration: underline;
-        color: var(--white);
-        text-align: center;
-    }
+    
     .main { 
         height: 100%;
         width: 100%;
@@ -575,33 +501,7 @@
         gap: 50px;
         margin-bottom: 5%;
     }
-    .textBox {
-        background-color: var(--header-color);
-        border-radius: 4%;
-        height: fit-content;
-        margin-top: 2%;
-        padding: 4%;
-        position: relative;
-    }
-    .textBox h2 {
-        font-size: 2rem;
-        margin: 0px;
-    }
-    .textBox h4 {
-        font-size: 1.2rem;
-        margin: 0px;
-        color: var(--project-colored-text);
-    }
-    .textBox p {
-        font-size: 1rem;
-    }
-    .projectInfo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        margin-bottom: 4%;
-    }
+   
     #verilog-symbol {
         width: 7%;
         height: auto;
@@ -610,26 +510,7 @@
         width: 7%;
         height: auto;
     }
-    .imgBox {
-        /* width: 40%;
-        height: auto;
-        position: absolute;
-        left:auto;
-        overflow: hidden; */
-
-        float:right;
-        left: auto;
-        right: 0px;
-        height: auto;
-        padding-top: 0px;
-        overflow: hidden;
-    }
-    .projectImg {
-        width: 100%;
-        height: auto;
-        display: block;
-        right: 0px;
-    }
+    
     .footer {
         width: 100%;
         height: 50px;
@@ -649,5 +530,58 @@
         margin: auto;
         /* padding-top: .7%; */
     }
+
+    /* <!-- HTML !-->
+<button class="button-64" role="button"><span class="text">Button 64</span></button> */
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
 
 </style>
