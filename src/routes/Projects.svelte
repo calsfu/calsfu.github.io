@@ -5,7 +5,7 @@
         {
             id: 1,
             title: 'Model Processor',
-            subtitle: 'Digital Logic',
+            subtitle: 'Verilog Digital Logic',
             description: 'Created a model CPU with 8 registers and a 16-bit bus. Supports 8 functions lie, ADD, SUB, MULT, JUMP. Recieved information from ROM storage and a program conter. Supports FPGA.',
             link: 'https://github.com/calsfu/verilog_processor',
             image: '/modelProcessor.png',
@@ -16,22 +16,31 @@
             title: 'Bike Light',
             subtitle: 'Microcontroller Intergration',
             description: 'A bike light that turns off in bright settings and gets brighter as speed increases. Collaborated in a group to create a circuit diagram, reasearch and purchase parts, and wrote code for an Arduino microcontroller.',
-            link: 's',
+            link: '',
             image: '/BikeLightPhoto.png',
             group: 4
         },
         //SOFTWARE SYSTEMS
         {
             id: 11,
+            title: 'Training App',
+            subtitle: 'Typescript, React Native, PostgreSQL, Python, Flask, AWS',
+            description: 'Created a mobile app using React Native and Typescript. Utilized a PostgreSQL database to store user information and a Flask server to handle requests. Deployed server on AWS EC2 instance.',
+            link: '',
+            image: '/trainingapp.png',
+            group: 1
+        },
+        {
+            id: 12,
             title: 'Scheduling Discord Bot',
-            subtitle: 'Typescript',
+            subtitle: 'Typescript, SQLite, Discord.js',
             description: 'Engineered a custom Discord bot for scheduling events and activities using the discord.js API. Utilized a SQLite database to store server specific events and send reminders an hour before an even',
             link: 'https://github.com/calsfu/scheduling-bot',
             image: '/scheduling-2.png',
             group: 1
         },
         {
-            id: 12,
+            id: 13,
             title: 'ASCII Pokemon Game',
             subtitle: 'C++ Terminal Game',
             description: 'Pokemon game using C++ in the terminal. Uses classes, inheritance, polymorphism, and more.',
@@ -49,14 +58,23 @@
             image: '/Steps_2000.gif',
             group: 3
         },
+        {
+            id: 22,
+            title: 'Street Sign Image Classifier',
+            subtitle: 'PyTorch Neural Network',
+            description: 'Created a Convolutional Neural Network (CNN) with PyTorch to classify street signs. Optimized network to receive 99% accuracy on the German Traffic Sign Recognition Benchmark (GTSRB).',
+            link: 'https://github.com/calsfu/streetsign-image-detection',
+            image: '/gtsrb.jpg',
+            group: 3
+        },
         //OS
         {
             id: 31,
             title: 'Threading Library',
             subtitle: 'C',
             description: 'Created a threading library in C that supports mutexes, semaphores, and condition variables. Implemented a scheduler that supports round robin, priority, and lottery scheduling.',
-            link: 's',
-            image: '/BikeLightPhoto.png',
+            link: '',
+            image: '/thread.png',
             group: 2
         },
         {
@@ -64,17 +82,17 @@
             title: 'Virtual File System',
             subtitle: 'C',
             description: 'Created a file system in C that supports multiple files, directories, and permissions.',
-            link: 's',
-            image: '/BikeLightPhoto.png',
+            link: '',
+            image: '/vfs.png',
             group: 2
         },
         {
             id: 33,
             title: 'Linux Shell',
             subtitle: 'C',
-            description: 'Created a shell in C that supports multiple commands, pipes, and redirection.',
+            description: 'Created a shell in C that supports multiple commands, pipes, and redirection. Followed REPL design pattern.',
             link: '',
-            image: '/BikeLightPhoto.png',
+            image: '/shell.png',
             group: 2
         }
     ]
@@ -114,7 +132,7 @@
         position: absolute;
         left:auto;
         overflow: hidden; */
-
+        /* transition: 300ms; */
         float:right;
         left: auto;
         right: 0px;
