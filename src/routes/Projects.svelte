@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let groupNum = 1;
+    let groupNum = 1;
     let projects = [
         //EMBEDDED/HARDWARE
         {
@@ -146,9 +146,73 @@
         display: block;
         right: 0px;
     }
-</style>
+    .projects {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        color : var(--text-color);
+        margin:5%;
+    }
+    .projectTitle {
+        text-align: center;
+    }
+    .projectBox {
+        color :var(--white);
+        display: grid;
+        margin: 0%;
+        width: 95%;
+        grid-template-columns: 50% 50%;
+        gap: 50px;
+        margin-bottom: 5%;
+    }
+.button-62 {
+  background: var(--header-color);
+  font-family: 'Poppins', sans-serif;
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
 
-{#each projects.filter(project => project.group === groupNum) as project (project.id)}
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem var(--header-color);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem var(--header-color);
+}
+</style>
+<section class="projects" id="projects">
+    <h1 class="projectTitle">PROJECTS</h1>
+    <!-- Choose type of projects -->
+    <div class="chooseProject">
+        <ul style="display:flex; flex-direction:row;  align-items: center;justify-content:center; list-style:none; border:none; gap:15px;">
+            <li><button class="button-62" on:click={() => groupNum = 1}>Systems</button></li>
+            <li><button class="button-62" on:click={() => groupNum = 2}>OS</button></li>
+            <li><button class="button-62" on:click={() => groupNum = 3}>Machine Learning</button></li>
+            <li><button class="button-62" on:click={() => groupNum = 4}>Hardware/Embedded</button></li>
+        </ul>
+        
+        
+        
+    </div>
+
+
+    <div class="projectBox">
+        
+        {#each projects.filter(project => project.group === groupNum) as project (project.id)}
     {#if project.id % 2 === 0}
     <div class="textBox">
          <h2>{project.title}</h2>
@@ -185,3 +249,10 @@
     
 
 {/each}
+       
+        
+    </div>
+    
+    <p style="color: var(--text-color);">Find more <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer">here</a></p>
+</section>
+
