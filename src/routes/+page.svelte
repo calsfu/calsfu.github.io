@@ -1,6 +1,6 @@
 <script lang="ts">
     import Projects from "./Projects.svelte";
-
+    import Skills from "./Skills.svelte";
     let y = 50;
     let darkMode = false;
 
@@ -84,169 +84,21 @@
             <h4 style="font-weight: 400;">Boston University Computer Engineering 25'</h4>
         </section>
         <section id="about" class="about">
-            <p>I am a third year computer engineering at Boston University. Currently, I am on a software track that focuses on backend development and computer architecture, but I am self-teaching myself front end languages. 
+            <p>I am a third year computer engineering at Boston University. Currently, I am on a software track that focuses on backend development and machine learning. 
             </p>
         </section>
         <section class = "skills">
-            <h1>SKILLS</h1>
-            <p>Use</p>
-            <ul class="skillList">
-                <div class="poopy">
-                    <li class="wholeIcon">
-                        <div class="picture">
-                            <i class="devicon-cplusplus-plain-wordmark"></i>
-                        </div>
-                        <p class="skillText">C++</p>
-                    </li>
-                </div>
-                <!-- Repeat this for Verilog, MATLAB, Typescript, HTML, CSS, Svelte, Git, Rust -->
-                <div class="poopy">
-                    <li class="wholeIcon">
-                        <div class="picture">
-                            <img id="toobig" alt="poopy" src="/verilog-svgrepo-com.svg">
-                        </div>
-                        <p class="skillText">Verilog</p>
-                    </li>
-                </div>
-                <div class="poopy">
-                    <li class="wholeIcon">
-                        <div class="picture">
-                            <i class="devicon-matlab-plain"></i>
-                        </div>
-                        <p class="skillText">MATLAB</p>
-                    </li>
-                </div>
-                <div class="poopy">
-                    <li class="wholeIcon">
-                        <div class="picture">
-                            <i class="devicon-typescript-plain"></i>
-                        </div>
-                        <p class="skillText">Typescript</p>
-                    </li>
-                </div>
-                <div class="poopy">
-                    <li class="wholeIcon">
-                        <div class="picture">
-                            <i class="devicon-thealgorithms-plain"></i>
-                        </div>
-                        <p class="skillText">Algorithms</p>
-                    </li>
-                </div>
-                <div class="poopy">
-                    <li class="wholeIcon">
-                        <div class="picture">
-                            <img src="/data-structure.svg" alt="datas" id="toobig">
-                        </div>
-                        <p class="skillText">Data Structures</p>
-                    </li>
-                </div>
-                <div class="poopy">
-                    <li class="wholeIcon">
-                        <div class="picture">
-                            <i class="devicon-arduino-plain"></i>
-                        </div>
-                        <p class="skillText">Arduino</p>
-                    </li>
-                </div>
-                <div class="poopy">
-                    <li class="wholeIcon">
-                        <div class="picture">
-                            <i class="devicon-rust-plain"></i>
-                        </div>
-                        <p class="skillText">Rust</p>
-                    </li>
-                </div>
-                <div class="poopy">
-                    <li class="wholeIcon">
-                        <div class="picture">
-                            <i class="devicon-svelte-plain"></i>
-                        </div>
-                        <p class="skillText">Svelte</p>
-                    </li>
-                </div>
-            </ul>
-            <p>Learning</p>
-                <ul class="skillList">
-                    <div class="poopy">
-                        <li class="wholeIcon">
-                            <div class="picture">
-                                <i class="devicon-python-plain"></i>
-                            </div>
-                            <p class="skillText">Python</p>
-                        </li>
-                    </div>
-                    <!-- Repeat this for Verilog, MATLAB, Typescript, HTML, CSS, Svelte, Git, Rust -->
-                    
-                    <div class="poopy">
-                        <li class="wholeIcon">
-                            <div class="picture">
-                                <img src="/operating-systems.svg" alt="datas" id="toobig">
-                            </div>
-                            <p class="skillText">OS</p>
-                        </li>
-                    </div>
-                    <div class="poopy">
-                        <li class="wholeIcon">
-                            <div class="picture">
-                                <img src="/computer-arch.svg" alt="datas" id="toobig">
-                            </div>
-                            <p class="skillText">Computer Architecture</p>
-                        </li>
-                    </div>
-                    <div class="poopy">
-                        <li class="wholeIcon">
-                            <div class="picture">
-                                <img src="/statistics.svg" alt="datas" id="toobig">
-                            </div>
-                            <p class="skillText">Statistics</p>
-                        </li>
-                    </div>
-                    <div class="poopy">
-                        <li class="wholeIcon">
-                            <div class="picture">
-                                <img src="/machine-learning.svg" alt="datas" id="toobig">
-                            </div>
-                            <p class="skillText">Machine Learning</p>
-                        </li>
-                    </div>
-                    <div class="poopy">
-                        <li class="wholeIcon">
-                            <div class="picture">
-                                <img src="/deep-learning-project-svgrepo-com.svg" alt="datas" id="toobig">
-                            </div>
-                            <p class="skillText">Deep Learning</p>
-                        </li>
-                    </div>
-                    <div class="poopy">
-                        <li class="wholeIcon">
-                            <div class="picture">
-                                <img src="/eye.svg" alt="datas" id="toobig">
-                            </div>
-                            <p class="skillText">Computer Vision</p>
-                        </li>
-                    </div>
-                </ul>
-                <!-- <li>Python</li>
-                <li>MongoDB</li>
-                <li>SQL</li>
-                <li>Algorithms</li>
-                <li>Data Structures</li>
-                <li>OS</li>
-                <li>Computer Architecture</li>
-                <li>Statistics</li>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>Computer Vision</li> -->
+                <Skills/>
                 </section>
         <section class="projects">
             <h1 class="projectTitle">PROJECTS</h1>
             <!-- Choose type of projects -->
             <div class="chooseProject">
-                <ul style="display:flex; flex-direction:row;  align-items: center;justify-content:center; list-style:none">
-                    <li><button class="button-64" on:click={() => projectInput = 1}><span class="text">Systems</span></button></li>
-                    <li><button class="button-64" on:click={() => projectInput = 2}><span class="text">OS</span></button></li>
-                    <li><button class="button-64" on:click={() => projectInput = 3}><span class="text">Machine Learning</span></button></li>
-                    <li><button class="button-64" on:click={() => projectInput = 4}><span class="text">Hardware/Embedded</span></button></li>
+                <ul style="display:flex; flex-direction:row;  align-items: center;justify-content:center; list-style:none; border:none; gap:15px;">
+                    <li><button class="button-62" on:click={() => projectInput = 1}>Systems</button></li>
+                    <li><button class="button-62" on:click={() => projectInput = 2}>OS</button></li>
+                    <li><button class="button-62" on:click={() => projectInput = 3}>Machine Learning</button></li>
+                    <li><button class="button-62" on:click={() => projectInput = 4}>Hardware/Embedded</button></li>
                 </ul>
                 
                 
@@ -442,47 +294,7 @@
         justify-content: center;
         align-items: center;
     } */
-    .skillList {
-        list-style-type: none;
-        display: grid;
-        /* flex-wrap: wrap; */
-        color: var(--white);
-        /* justify-content: center; */
-        grid-template-columns: repeat(3, 16rem);
-        gap: 25px;
-        justify-content: center;
-        padding-left: 0px;
-    }
-    .wholeIcon {
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        grid-template-rows: 1fr;
-        background-color: var(--skill-text);
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; */
-    }
-    .wholeIcon:hover {
-        background-color: var(--header-color);
-    }
-    .picture {
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        display: flex;
-        padding: 7px;
-        background-color: var(--skill-icon);
-    }
-    #toobig {
-        width: 32px;
-        height: auto;
-    }
-    .skillText {
-        font-size: 1rem;
-        position: relative;
-        text-align: center;
-    }
+    
     .projects {
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
@@ -535,53 +347,37 @@
 <button class="button-64" role="button"><span class="text">Button 64</span></button> */
 
 /* CSS */
-.button-64 {
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
+
+
+/* CSS */
+.button-62 {
+  background: var(--header-color);
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
   text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  cursor: pointer;
 }
 
-.button-64:active,
-.button-64:hover {
-  outline: 0;
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem var(--header-color);
 }
 
-.button-64 span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
-}
-
-.button-64:hover span {
-  background: none;
-}
-
-@media (min-width: 768px) {
-  .button-64 {
-    font-size: 24px;
-    min-width: 196px;
-  }
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem var(--header-color);
 }
 
 </style>
