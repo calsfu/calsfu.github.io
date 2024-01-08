@@ -1,4 +1,6 @@
-
+<script>
+    //will be used to show skills with loop
+</script>
 
 <style>
     .skillList {
