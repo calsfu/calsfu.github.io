@@ -1,5 +1,6 @@
 // svelte.config.js
 import adapter from 'svelte-adapter-github';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
 export default {
   kit: {
