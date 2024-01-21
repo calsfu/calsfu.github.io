@@ -94,6 +94,15 @@
             link: '',
             image: '/shell.png',
             group: 2
+        },
+        {   
+            id: 41,
+            title: 'Food Compare',
+            subtitle: 'Svelte, Javascript, Python, Flask',
+            description: '30 minute challenge to create a web app that lets the user choose between two foods. Uses the elo rating system to rank foods.',
+            link: 'https://github.com/calsfu/foodCompare',
+            image: '/foodCompare.png',
+            group: 5
         }
     ]
 </script>
@@ -202,10 +211,9 @@
             <li><button class="button-62" on:click={() => groupNum = 1}>Systems</button></li>
             <li><button class="button-62" on:click={() => groupNum = 2}>OS</button></li>
             <li><button class="button-62" on:click={() => groupNum = 3}>Machine Learning</button></li>
+            <li><button class="button-62" on:click={() => groupNum = 5}>Web</button></li>
             <li><button class="button-62" on:click={() => groupNum = 4}>Hardware/Embedded</button></li>
         </ul>
-        
-        
         
     </div>
 
@@ -219,10 +227,11 @@
         <h4 >{project.subtitle}</h4>
         <p>{project.description}</p>    
          <div class="projectInfo"> 
-             <!-- <i class="devicon-typescript-plain"></i>  -->
-             <a href={project.link} target="_blank" rel="noopener noreferrer" id="seemorebutton">
-                See More
-            </a> 
+            {#if project.link}
+            <a href={project.link} target="_blank" rel="noopener noreferrer" id="seemorebutton">
+               See More
+           </a> 
+              {/if}
          </div> 
     </div> 
      <div class="imgBox">
