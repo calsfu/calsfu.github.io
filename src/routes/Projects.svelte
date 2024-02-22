@@ -13,12 +13,12 @@
         },
         {
             id: 2,
-            title: 'Bike Light',
-            subtitle: 'Microcontroller Intergration',
+            title: 'Autonomous Bike Light',
+            subtitle: 'C++, Arduino, Circuits, Sensors',
             description: 'A bike light that turns off in bright settings and gets brighter as speed increases. Collaborated in a group to create a circuit diagram, reasearch and purchase parts, and wrote code for an Arduino microcontroller.',
             link: '',
             image: '/BikeLightPhoto.png',
-            group: 4
+            group: 3
         },
         //SOFTWARE SYSTEMS
         {
@@ -40,6 +40,15 @@
             group: 1
         },
         {
+            id: 14,
+            title: 'Casino',
+            subtitle: 'Rust, Svelte, Tauri',
+            description: 'Casino app that allows users to play games like blackjack, slots, and roulette. Uses Rust for backend, Svelte for frontend, and Tauri to connect them.',
+            link: 'https://github.com/calsfu/rust-casino',
+            image: '/casino.png',
+            group: 1
+        },
+        {
             id: 13,
             title: 'ASCII Pokemon Game',
             subtitle: 'C++ Terminal Game',
@@ -50,7 +59,16 @@
         },
         //MACHINE LEARNING
         {
-            id: 21,
+            id: 23,
+            title: 'Self-Driving Car',
+            subtitle: 'Python, PyTorch, NVIDA Jetson Nano',
+            description: 'Created a self-driving car using a Jetson Nano and a PyTorch Neural Network. The car is able to drive around a track and avoid obstacles.',
+            link: '',
+            image: '/car.jpg',
+            group: 3
+        },
+        {
+            id: 22,
             title: 'Reinforcement Learning Driving Game',
             subtitle: 'PyTorch Neural Network',
             description: 'Created a Deep Q Learning (DQN) Neural Network with PyTorch to finish a race. Optimized network to receive maximum reward from the OpenAI Gymnasium API.',
@@ -59,7 +77,7 @@
             group: 3
         },
         {
-            id: 22,
+            id: 21,
             title: 'Street Sign Image Classifier',
             subtitle: 'PyTorch Neural Network',
             description: 'Created a Convolutional Neural Network (CNN) with PyTorch to classify street signs. Optimized network to receive 99% accuracy on the German Traffic Sign Recognition Benchmark (GTSRB).',
@@ -208,11 +226,11 @@
     <!-- Choose type of projects -->
     <div class="chooseProject">
         <ul style="display:flex; flex-direction:row;  align-items: center;justify-content:center; list-style:none; border:none; gap:15px;">
-            <li><button class="button-62" on:click={() => groupNum = 1}>Systems</button></li>
+            <li><button class="button-62" on:click={() => groupNum = 1}>Backend</button></li>
+            <li><button class="button-62" on:click={() => groupNum = 3}>Robotics/ML/Autonomous Systems</button></li>
             <li><button class="button-62" on:click={() => groupNum = 2}>OS</button></li>
-            <li><button class="button-62" on:click={() => groupNum = 3}>Machine Learning</button></li>
             <li><button class="button-62" on:click={() => groupNum = 5}>Web</button></li>
-            <li><button class="button-62" on:click={() => groupNum = 4}>Hardware/Embedded</button></li>
+            <li><button class="button-62" on:click={() => groupNum = 4}>Hardware</button></li>
         </ul>
         
     </div>
