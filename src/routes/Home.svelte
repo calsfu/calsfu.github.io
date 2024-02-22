@@ -21,6 +21,6 @@
 </style>
 
 <section id="home" class="home">
-    <h1 style="font-weight: 400; font-family: 'Poppins', sans-serif;">Hello, I'm <span class="color_name">Cole Resurreccion</span></h1>
+    <h1 style="font-weight: 400; font-family: 'Poppins', sans-serif;">Hello, I'm <span class="color_name" style="font-weight: 500">Cole Resurreccion</span></h1>
     <h4 style="font-weight: 400;">Boston University Computer Engineering 25'</h4>
 </section>
