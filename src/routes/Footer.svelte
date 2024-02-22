@@ -23,13 +23,20 @@
         font-weight: 300;
         font-size: .85rem;
         color:var(--white);
+        display: flex;
+        justify-content: space-between;
+    }
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 
 <section class="footer">
     <div class="footerInfo"> 
         <a href="https://github.com/calsfu" target="_blank" rel="noopener noreferrer"><img src="/github-mark-white.png" alt="logo" class="logo"></a>
-        <p>Made by Cole Resurreccion</p>
+        <p class="text">Made by Cole Resurreccion</p>
         <a href="mailto::coler2366@gmail.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
     </div>
 </section>
