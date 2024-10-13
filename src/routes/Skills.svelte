@@ -10,53 +10,6 @@
             icon: 'devicon-python-plain'
         },
         {
-            name: 'MATLAB',
-            icon: 'devicon-matlab-plain'
-        },
-        {
-            name: 'Typescript',
-            icon: 'devicon-typescript-plain'
-        },
-        {
-            name: 'Algorithms',
-            icon: 'devicon-thealgorithms-plain'
-        },
-        {
-            name: 'Data Structures',
-            icon: 'data-structure'
-        },
-        {
-            name: 'Arduino',
-            icon: 'devicon-arduino-plain'
-        },
-        {
-            name: 'Rust',
-            icon: 'devicon-rust-plain'
-        },
-        {
-            name: 'Svelte',
-            icon: 'devicon-svelte-plain'
-        },
-        {
-            name: 'Python',
-            icon: 'devicon-python-plain'
-        },
-        {
-            name: 'OS',
-            icon: 'operating-systems'
-        },
-        {
-            name: 'Statistics',
-            icon: 'statistics'
-        },
-    ];
-    const learningSkills = [
-        {
-            name: 'Computer Architecture',
-            icon: 'computer-arch'
-        },
-        
-        {
             name: 'Machine Learning',
             icon: 'machine-learning'
         },
@@ -67,7 +20,40 @@
         {
             name: 'Computer Vision',
             icon: 'eye'
-        }
+        },
+        {
+            name: 'MATLAB',
+            icon: 'devicon-matlab-plain'
+        },
+        {
+            name: 'Rust',
+            icon: 'devicon-rust-plain'
+        },
+        {
+            name: 'Typescript',
+            icon: 'devicon-typescript-plain'
+        },
+        {
+            name: 'Svelte',
+            icon: 'devicon-svelte-plain'
+        },
+        {
+            name: 'Arduino',
+            icon: 'devicon-arduino-plain'
+        },
+        {
+            name: 'OS',
+            icon: 'operating-systems'
+        },
+        {
+            name: 'Statistics',
+            icon: 'statistics'
+        },
+
+    ];
+    const learningSkills = [
+        
+
     ];
 </script>
 
@@ -145,21 +131,5 @@
                         </div>
                     {/each}
                 </ul>
-                <p>Learning</p>
-                <ul class="skillList">
-                    {#each learningSkills as {name, icon}}
-                        <div class="poopy">
-                            <li class="wholeIcon">
-                                <div class="picture">
-                                    {#if icon.startsWith('devicon')}
-                                        <i class={icon}></i>
-                                    {:else}
-                                        <img src='/{icon}.svg' alt="" id="toobig">
-                                    {/if}
-                                </div>
-                                <p class="skillText">{name}</p>
-                            </li>
-                        </div>
-                    {/each}
-                    </ul>
+                
 </section>

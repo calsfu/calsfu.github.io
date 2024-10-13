@@ -1,5 +1,5 @@
 <script lang="ts">
-    let groupNum = 1;
+    let groupNum = 3;
     let projects = [
         //EMBEDDED/HARDWARE
         {
@@ -16,20 +16,11 @@
             title: 'Autonomous Bike Light',
             subtitle: 'C++, Arduino, Circuits, Sensors',
             description: 'A bike light that turns off in bright settings and gets brighter as speed increases. Collaborated in a group to create a circuit diagram, reasearch and purchase parts, and wrote code for an Arduino microcontroller.',
-            link: '',
+            link: 'https://github.com/calsfu/autonomous-bike-light',
             image: '/BikeLightPhoto.png',
             group: 3
         },
         //SOFTWARE SYSTEMS
-        {
-            id: 11,
-            title: 'Training App',
-            subtitle: 'Typescript, React Native, PostgreSQL, Python, Flask, AWS',
-            description: 'Created a mobile app using React Native and Typescript. Utilized a PostgreSQL database to store user information and a Flask server to handle requests. Deployed server on AWS EC2 instance.',
-            link: '',
-            image: '/trainingapp.png',
-            group: 1
-        },
         {
             id: 12,
             title: 'Scheduling Discord Bot',
@@ -37,15 +28,6 @@
             description: 'Engineered a custom Discord bot for scheduling events and activities using the discord.js API. Utilized a SQLite database to store server specific events and send reminders an hour before an even',
             link: 'https://github.com/calsfu/scheduling-bot',
             image: '/scheduling-2.png',
-            group: 1
-        },
-        {
-            id: 14,
-            title: 'Casino',
-            subtitle: 'Rust, Svelte, Tauri',
-            description: 'Casino app that allows users to play games like blackjack, slots, and roulette. Uses Rust for backend, Svelte for frontend, and Tauri to connect them.',
-            link: 'https://github.com/calsfu/rust-casino',
-            image: '/casino.png',
             group: 1
         },
         {
@@ -57,6 +39,16 @@
             image: '/pokemon.png',
             group: 1
         },
+        {
+            id: 14,
+            title: 'Casino',
+            subtitle: 'Rust, Svelte, Tauri',
+            description: 'Casino app that allows users to play games like blackjack, slots, and roulette. Uses Rust for backend, Svelte for frontend, and Tauri to connect them.',
+            link: 'https://github.com/calsfu/rust-casino',
+            image: '/casino.png',
+            group: 1
+        },
+
         //MACHINE LEARNING
         {
             id: 23,
@@ -68,16 +60,16 @@
             group: 3
         },
         {
-            id: 22,
-            title: 'Reinforcement Learning Driving Game',
+            id: 24,
+            title: 'Lip Reading Neural Network',
             subtitle: 'PyTorch Neural Network',
-            description: 'Created a Deep Q Learning (DQN) Neural Network with PyTorch to finish a race. Optimized network to receive maximum reward from the OpenAI Gymnasium API.',
-            link: 'https://github.com/calsfu/ASCII-Pokemon-Game',
-            image: '/Steps_2000.gif',
+            description: 'Utlizied two lip reading datasets to create a transformer based and CNN based Neural Networks.',
+            link: 'https://github.com/chris-krenz/ec523-lip-reading-project',
+            image: '/small_report.png',
             group: 3
         },
         {
-            id: 21,
+            id: 27,
             title: 'Street Sign Image Classifier',
             subtitle: 'PyTorch Neural Network',
             description: 'Created a Convolutional Neural Network (CNN) with PyTorch to classify street signs. Optimized network to receive 99% accuracy on the German Traffic Sign Recognition Benchmark (GTSRB).',
@@ -85,13 +77,14 @@
             image: '/gtsrb.jpg',
             group: 3
         },
+
         //OS
         {
             id: 31,
             title: 'Threading Library',
             subtitle: 'C',
             description: 'Created a threading library in C that supports mutexes, semaphores, and condition variables. Implemented a scheduler that supports round robin, priority, and lottery scheduling.',
-            link: '',
+            link: 'https://github.com/calsfu/mini-os',
             image: '/thread.png',
             group: 2
         },
@@ -100,7 +93,7 @@
             title: 'Virtual File System',
             subtitle: 'C',
             description: 'Created a file system in C that supports multiple files, directories, and permissions.',
-            link: '',
+            link: 'https://github.com/calsfu/mini-os',
             image: '/vfs.png',
             group: 2
         },
@@ -109,19 +102,10 @@
             title: 'Linux Shell',
             subtitle: 'C',
             description: 'Created a shell in C that supports multiple commands, pipes, and redirection. Followed REPL design pattern.',
-            link: '',
+            link: 'https://github.com/calsfu/mini-os',
             image: '/shell.png',
             group: 2
         },
-        {   
-            id: 41,
-            title: 'Food Compare',
-            subtitle: 'Svelte, Javascript, Python, Flask',
-            description: '30 minute challenge to create a web app that lets the user choose between two foods. Uses the elo rating system to rank foods.',
-            link: 'https://github.com/calsfu/foodCompare',
-            image: '/foodCompare.png',
-            group: 5
-        }
     ]
 </script>
 
@@ -226,11 +210,10 @@
     <!-- Choose type of projects -->
     <div class="chooseProject">
         <ul style="display:flex; flex-direction:row;  align-items: center;justify-content:center; list-style:none; border:none; gap:15px;">
-            <li><button class="button-62" on:click={() => groupNum = 1}>Backend</button></li>
             <li><button class="button-62" on:click={() => groupNum = 3}>Robotics/ML/Autonomous Systems</button></li>
+            <li><button class="button-62" on:click={() => groupNum = 1}>Systems and Applications</button></li>
             <li><button class="button-62" on:click={() => groupNum = 2}>OS</button></li>
-            <li><button class="button-62" on:click={() => groupNum = 5}>Web</button></li>
-            <li><button class="button-62" on:click={() => groupNum = 4}>Hardware</button></li>
+            <li><button class="button-62" on:click={() => groupNum = 4}>Logic Design</button></li>
         </ul>
         
     </div>
