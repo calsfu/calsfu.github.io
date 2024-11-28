@@ -21,8 +21,8 @@
     <div class="main">
         <Header/>
         <Home/>
-        <About/>
-        <Skills/>
+        <!-- <About/> -->
+        <!-- <Skills/> -->
         <Projects/>
         <Footer/>
     </div>

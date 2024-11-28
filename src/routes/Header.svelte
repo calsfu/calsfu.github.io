@@ -156,12 +156,12 @@
                 <li class="guideItem">
                     <button on:click={scrollToHome}>Home</button>
                 </li>
-                <li class="guideItem">
+                <!-- <li class="guideItem">
                     <button on:click={scrollToAbout}>About</button>
-                </li>
-                <li class="guideItem"> 
+                </li> -->
+                <!-- <li class="guideItem"> 
                     <button on:click={scrollToSkills}>Skills</button>
-                </li>
+                </li> -->
                 <li class="guideItem">
                     <button on:click={scrollToProjects}>Projects</button>
                 </li>

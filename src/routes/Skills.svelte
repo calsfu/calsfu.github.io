@@ -113,7 +113,6 @@
 </style>
 <section class = "skills" id="skills">
     <h1>SKILLS</h1>
-                <p>Know</p>
                 <ul class="skillList">
                     {#each knownSkills as {name, icon}}
 
