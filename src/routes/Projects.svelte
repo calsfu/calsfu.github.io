@@ -11,15 +11,6 @@
             image: '/modelProcessor.png',
             group: 4
         },
-        {
-            id: 2,
-            title: 'Autonomous Bike Light',
-            subtitle: 'C++, Arduino, Circuits, Sensors',
-            description: 'A bike light that turns off in bright settings and gets brighter as speed increases. Collaborated in a group to create a circuit diagram, reasearch and purchase parts, and wrote code for an Arduino microcontroller.',
-            link: 'https://github.com/calsfu/autonomous-bike-light',
-            image: '/BikeLightPhoto.png',
-            group: 3
-        },
         //SOFTWARE SYSTEMS
         {
             id: 12,
@@ -49,9 +40,27 @@
             group: 1
         },
 
-        //MACHINE LEARNING
+        //RAS
+        {
+            id: 22,
+            title: 'CARLA Modular Pipeline',
+            subtitle: 'Python, CARLA, Perception, Motion Planning, Control',
+            description: ' Modular pipeline consisting of a perception, path planning, and a control unit.',
+            link: 'https://github.com/calsfu/carla-modular-pipeline',
+            image: '/mod-pipe.png',
+            group: 3
+        },
         {
             id: 23,
+            title: 'CARLA Imitation Learning',
+            subtitle: 'Python, PyTorch, CARLA, Deep Learning, CNN',
+            description: 'Adapted "End to End Learning for Self-Driving Cars" by NVIDIA. Trained and evaluated on the CARLA. Placed 5th out of 30 teams in competition.',
+            link: 'https://github.com/calsfu/carla-imitation-learning',
+            image: '/imi-learn.png',
+            group: 3
+        },
+        {
+            id: 24,
             title: 'Self-Driving Car',
             subtitle: 'Python, PyTorch, NVIDA Jetson Nano',
             description: 'Created a self-driving car using a Jetson Nano and a PyTorch Neural Network. The car is able to drive around a track and avoid obstacles.',
@@ -60,24 +69,23 @@
             group: 3
         },
         {
-            id: 24,
+            id: 25,
             title: 'Lip Reading Neural Network',
-            subtitle: 'PyTorch Neural Network',
+            subtitle: 'Python, PyTorch, Deep Learning, CNN, Transformer',
             description: 'Utlizied two lip reading datasets to create a transformer based and CNN based Neural Networks.',
             link: 'https://github.com/chris-krenz/ec523-lip-reading-project',
             image: '/small_report.png',
             group: 3
         },
         {
-            id: 27,
-            title: 'Street Sign Image Classifier',
-            subtitle: 'PyTorch Neural Network',
-            description: 'Created a Convolutional Neural Network (CNN) with PyTorch to classify street signs. Optimized network to receive 99% accuracy on the German Traffic Sign Recognition Benchmark (GTSRB).',
-            link: 'https://github.com/calsfu/streetsign-image-detection',
-            image: '/gtsrb.jpg',
+            id: 2,
+            title: 'Autonomous Bike Light',
+            subtitle: 'C++, Arduino, Circuits, Sensors',
+            description: 'A bike light that turns off in bright settings and gets brighter as speed increases. Collaborated in a group to create a circuit diagram, reasearch and purchase parts, and wrote code for an Arduino microcontroller.',
+            link: 'https://github.com/calsfu/autonomous-bike-light',
+            image: '/BikeLightPhoto.png',
             group: 3
         },
-
         //OS
         {
             id: 31,
